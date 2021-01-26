@@ -1,0 +1,73 @@
+* 
+{
+
+
+  border-right:1px solid #fff;
+  margin: 0px;
+  
+  padding: 0px;
+
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+
+body 
+{
+
+  height: 100vh;
+  
+  display: flex;
+
+}
+
+
+.code-area 
+{
+
+  display: flex;
+ 
+  flex-direction:column;
+  
+  width: 40%;
+  
+
+ 
+}
+
+.code-area textarea 
+{
+  resize: none;
+
+  outline: none;
+
+  width: 100%;
+  
+  height: 33.33%;
+
+  font-size: 18px;
+
+  padding: 10px;
+
+  background-color:black;
+  color:white;
+
+}
+
+
+.preview-area 
+{
+
+  width: 100%;
+background-color:red;
+}
+
+.preview-area iframe
+{
+background-color:#fff;
+height:66.66%;
+width:100%;
+border:3px solid red;
+padding:0px;
+margin:0px;
+}

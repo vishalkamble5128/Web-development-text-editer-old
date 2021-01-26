@@ -1,0 +1,151 @@
+<html>
+
+<head>
+<link type="text/css" href="edit.css" rel="stylesheet">
+
+<script type="text/javascript" src="edit.js"></script>
+
+<link type="text/css" href="vishal.css" rel="stylesheet">
+
+<script type="text/javascript" src="vishal.js"></script>
+
+
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script>
+$(document).ready(function(){
+$(".bmenu").click(function(){
+$("#dmenu").show(500);
+$("#close").click(function(){
+$("#dmenu").hide(500);
+});
+});
+});
+
+
+$(document).ready(function(){
+$("#bm").click(function(){
+$("#ctcd").show(500);
+$("#bclose").click(function(){
+$("#ctcd,#dmenu").hide(500);
+$("#cfs").click(function(){
+$("#cfsd").show(500);
+$("#bsize").click(function(){
+$("#cfsd,#dmenu").hide(500);
+
+
+
+});
+});
+});
+});
+});
+</script>
+
+<style type="text/css">
+</style>
+
+
+<script type="text/javascript">
+
+</script>
+
+</head>
+
+<body>
+ 
+<div class="code-area">
+
+<div id="dmenu">
+
+<input type="button" value="Chang Text Color" id="bm" >
+
+<input type="button" value="Chang Font Size" id="cfs" > 
+
+<input type="button" value="Close " id="close">
+
+</div>
+
+<div id="ctcd">
+
+<button class="color" id="cb1" onclick="orange()"> </button>
+
+<button class="color" id="cb2" onclick="red()"> </button>
+
+<button class="color" id="cb3" onclick="green()"> </button>
+
+<button class="color" id="cb4"onclick="deeppink()"> </button>
+
+
+<button class="color" id="cb5" onclick="blue()"
+> </button>
+
+<button class="color" id="cb6" onclick="lime()"
+> </button>
+<button class="color" id="cb7" onclick="aqua()"> </button>
+
+<button class="color" id="cb8" onclick="coral()"> </button>
+
+
+<button class="color" id="cb9"
+onclick="purple()" > </button>
+
+<button class="color" id="cb10"
+onclick="maroon()"> </button>
+
+<button class="color" id="cb11" onclick="teal()"> </button>
+
+<button class="color" id="cb12" onclick="crimson()"> </button><br>
+
+<button style="height:40px; width:175px; font-size:25px;" id="bclose">Ok </button>
+</div>
+
+<div id="cfsd">
+
+<button class="bs" id="b5p" >05px</button>
+<button class="bs" id="b10px" >10px </button>
+<button class="bs"  id="b15px">15px </button>
+<button  class="bs" id="b20px" >20px </button>
+<button class="bs" id="b25px">25px</button>
+<button class="bs" id="b30px">30px</button>
+
+<button style="height:40px; width:175px; font-size:25px;" id="bsize">Ok </button>
+
+
+</div>
+
+<div id="menu">
+
+<button class="bmenu"> Menu </button>
+
+</div>
+<textarea id="htmlCode"  placeholder="HTML Code"  
+            oninput="showPreview()" name="color"></textarea>
+
+  <textarea id="cssCode" placeholder="CSS Code" oninput="showPreview()"></textarea>
+  <textarea id="jsCode" placeholder="JavaScript Code" oninput="showPreview()"></textarea>
+
+</div>
+
+
+
+<div class="preview-area">
+  <iframe id="preview-window"></iframe>
+
+
+
+
+
+<textarea id="jquerycode" oninput="showPreview()" style="margin:0px; width:100%; height: 33.33%; background-color:black; resize: none; color:white;   font-size: 18px; padding: 10px;" placeholder="Jquery code"></textarea>
+
+</div>
+
+
+
+</body>
+
+</html>
+
+
+
